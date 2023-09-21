@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.mycompany.pa_tp_2;
+package Modelo;
 
 import java.util.Date;
 
@@ -11,13 +11,22 @@ import java.util.Date;
  * @author marta
  */
 public class Materia {
-int idMat;
-String nomMateria;
-Date anioCursado;
 
+    int idMat;
+    String nomMateria;
+    int anioCursado;
+
+    //Constructor
     public Materia() {
     }
 
+    public Materia(int idMat, String nomMateria, int anioCursado) {
+        this.idMat = idMat;
+        this.nomMateria = nomMateria;
+        this.anioCursado = anioCursado;
+    }
+
+    //Getters
     public int getIdMat() {
         return idMat;
     }
@@ -26,10 +35,11 @@ Date anioCursado;
         return nomMateria;
     }
 
-    public Date getAnioCursado() {
+    public int getAnioCursado() {
         return anioCursado;
     }
 
+    //Setters
     public void setIdMat(int idMat) {
         this.idMat = idMat;
     }
@@ -38,9 +48,8 @@ Date anioCursado;
         this.nomMateria = nomMateria;
     }
 
-    public void setAnioCursado(Date anioCursado) {
+    public void setAnioCursado(int anioCursado) {
         this.anioCursado = anioCursado;
     }
-
 
 }
