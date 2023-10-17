@@ -64,7 +64,5 @@ public class Sistema {
     public List<Area> getAreas() {
         return areas;
     }
-    public Sistema(){
-        
-    }
+    
 }
